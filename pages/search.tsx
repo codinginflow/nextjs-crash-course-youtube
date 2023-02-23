@@ -57,7 +57,7 @@ const SearchNewsPage = () => {
                 <div className="d-flex flex-column align-items-center">
                     {searchResultsLoading && <Spinner animation="border" />}
                     {searchResultsLoadingIsError && <p>Something went wrong. Please try again.</p>}
-                    {searchResults?.length === 0 && <p>Nothing found. Try a different query.</p>}
+                    {searchResults?.length === 0 && <p>Nothing found. Try a different query!</p>}
                     {searchResults && <NewsArticlesGrid articles={searchResults} />}
                 </div>
             </main>

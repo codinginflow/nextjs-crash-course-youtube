@@ -1,12 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import { GetServerSideProps } from 'next'
-import { NewsArticle, NewsResponse } from '@/models/NewsArticles'
-import NewsArticleEntry from '@/components/NewsArticleEntry'
-import NewsArticlesGrid from '@/components/NewsArticlesGrid'
-import { Alert } from 'react-bootstrap'
+import NewsArticlesGrid from '@/components/NewsArticlesGrid';
+import { NewsArticle, NewsResponse } from '@/models/NewsArticles';
+import { GetServerSideProps } from 'next';
+import Head from 'next/head';
+import { Alert } from 'react-bootstrap';
 
 interface BreakingNewsPageProps {
   newsArticles: NewsArticle[],
