@@ -36,6 +36,7 @@ export const getStaticProps: GetStaticProps<CategoryNewsPageProps> = async ({ pa
         props: { newsArticles: newsResponse.articles },
         revalidate: 5 * 60,
     }
+    // let error go to 500 page
 }
 
 const CategoryNewsPage = ({ newsArticles }: CategoryNewsPageProps) => {
