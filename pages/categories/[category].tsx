@@ -10,7 +10,7 @@ interface CategoryNewsPageProps {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const categorySlugs = [
+    const categorySlugs = [ // this could be coming from an API
         "business",
         "entertainment",
         "general",
